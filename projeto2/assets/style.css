@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --cor1: rgb(197, 121, 206);
+    --cor2: rgb(245, 151, 255);
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+}
+nav > a:hover {
+    background-color: var(--cor2);
+    transition: 0.4s;
+}
+
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagens {
+    width: 40%;
+    min-width: 400px;
+}
+.camisas {
+    width: 80%;
+    min-width: 300px;
+    margin: 5%;
+    border-radius: 10px;
+}
+.camisas:nth-child(2), .camisas:nth-child(3) {
+    display: none;
+}
+
+.info { /* fazer um media query pra deixar a foto do produto e as informações uma do lado da outra em despositivos grandes e com linha quebrada em dispositivos pequenos */
+    width: 100%;
+    max-width: 50%;
+    margin: 5%;
+}
+.marca {
+    font-weight: bold;
+    color: var(--cor1);
+    margin: 5px 0;
+}
+.nome-produto {
+    font-size: 230%;
+}
+
+.tamanhos {
+    display: flex;
+}
