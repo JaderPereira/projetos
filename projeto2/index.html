@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado fechado</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css" media="screen">
+    <link rel="stylesheet" href="assets/large.css" media="screen and (orientation:landscape)">
+    <link rel="stylesheet" href="assets/mobile.css" media="screen and (orientation:portrait)">
 </head>
 <body>
     <header>
@@ -22,26 +24,45 @@
             <img src="assets/img/camisa.png" class="camisas" id="camisa-angulo2" alt="Camisa bege">
             <img src="assets/img/camisa.png" class="camisas" id="camisa-angulo3" alt="Camisa bege">
         </section>
+
+
+
         <section class="info">
+
             <p class="marca">South</p>
+
             <h1 class="nome-produto">Camisa beje South</h1>
+
             <p class="descricao">Camisa básica da South cor bege.</p>
+            
             <div class="preco">
                 <h2 class="preco-desconto-valor"></h2>
                 <div class="preco-desconto"></div>
                 <div class="preco-original"></div>
             </div>
+            
             <div class="tamanhos">
-                <div>
-                    <img src="assets/img/icons8-p-32.png" alt="Tamanho P">
+                <div class="bordaTamanho">
+                    <input type="radio" name="tamanho" class="inputTamanho" id="p">
+                    <label for="p"><img src="assets/img/icons8-p-32.png" alt="Tamanho P"> </label>
                 </div>
-                <div>
-                    <img src="assets/img/icons8-m-32.png" alt="Tamanho M">
+                <div class="bordaTamanho">
+                    <input type="radio" name="tamanho" class="inputTamanho" id="m">
+                    <label for="m"><img src="assets/img/icons8-m-32.png" alt="Tamanho M"> </label>
                 </div>
-                <div>
-                    <img src="assets/img/icons8-g-32.png" alt="Tamanho G">
+                <div class="bordaTamanho">
+                    <input type="radio" name="tamanho" class="inputTamanho" id="g">
+                    <label for="g"><img src="assets/img/icons8-g-32.png" alt="Tamanho G"> </label>
                 </div>
             </div>
+
+            <div class="quantidade">
+                <label for="iQuantidade">Quantidade</label>
+                <select name="quantidade" id="iQuantidade">
+                    <option value="1">1</option>
+                </select>
+            </div>
+
             <div class="adquirir">
                 <input type="button" value="Adicionar ao carrinho">
                 <input type="button" value="Comprar">
