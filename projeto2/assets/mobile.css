@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+main {
+    justify-content: center;
+}
+.imagens {
+    width: 90%;
+}
+.info {
+    width: 90%;
+    min-width: 90%;
+}
+
+.adquirir input {
+    font-size: 1em;
+
+}
