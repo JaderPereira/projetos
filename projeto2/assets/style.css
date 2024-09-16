@@ -75,6 +75,7 @@ main {
     font-size: 0.6em;
     background-color: rgba(245, 151, 255, 0.658)
 }
+
 .preco-original {
     text-decoration: line-through;
 }
